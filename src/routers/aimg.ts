@@ -79,7 +79,7 @@ router.get("/aimg", async (ctx: IBingImageCcontext) => {
       return;
     }
 
-    const img = get(images, `[${idx}].url.uhd`);
+    const img = get(images, `[${idx}].url.hd`);
     const url = img ? `${emooa_cdn}/${img}` : "";
 
     // 服务端读取图片后回传
