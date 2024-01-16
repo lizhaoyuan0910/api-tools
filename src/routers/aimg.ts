@@ -44,7 +44,7 @@ router.get("/aimg", async (ctx: IBingImageCcontext) => {
     const time = dayjs().format("YYYY-YY-DD");
     const params = { name: "aimg", time };
     const cacheKey = JSON.stringify(params);
-    const emooa_cdn = "https://api.chickoi.com";
+    const emooa_cdn = "https://cdn.api.chickoi.com";
 
     // 从缓存中获取数据
     let images = await cache.get(cacheKey);
